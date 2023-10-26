@@ -10,6 +10,8 @@ bot = Bot(token = '6792719026:AAEnwk-mvIXkymnORF8r7E8zyu0RQ_nVgIU')
 dp = Dispatcher(bot, storage = storage)
 dp.middleware.setup(LoggingMiddleware())
 
+# 5488064821:AAES5pJBsmrdOXNA9FipnA54aisYhA9oodY
+
 async def echo(message: types.Message):
     await message.answer(text=f'Не {message.text}, а с ДР Санечка')
 
